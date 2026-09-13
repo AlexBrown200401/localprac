@@ -1,0 +1,53 @@
+  401  git init
+  402  ls -la
+  403  git config -l
+  404  touch a b c
+  405  add .
+  406  git add .
+  407  git status
+  408  git commit -m "INIT commit on local"
+  409  echo "This is file a " >> a
+  410  git add a
+  411  git commit -m "file a was edited"
+  412  git log
+  413  echo "This is file b .. " >> b
+  414  git add .
+  415  git commit -m " file b was edited"
+  416  git log
+  417  echo "Secret password" >> c
+  418  git add c
+  419  git status
+  420  git commit -m " c was added by mistake"
+  421  git rm --cached c
+  422  git status
+  423  git commit -m " c was untracked"
+  424  touch d
+  425  echo "some text" >> d
+  426  git add .
+  427  git commit -m " d was added asweell"
+  428  git restore --staged d
+  429  git status
+  430  rm d
+  431  echo "Hello from file d" > d
+  432  git add .
+  433  git status
+  434  git restore --staged d
+  435  git status
+  436  git commit -m "d was restored"
+  437  git log
+  438  git rm --cache d
+  439  git log
+  440  git commit -m "d was removed from git"
+  441  git status
+  442  git log
+  443  got log
+  444  echo " Now for this practice i will create a new empty repo on gitHub and set the url and push the changed" > Action
+  445  git add Action
+  446  git commit -m " Actions were mentioned on Action doc"
+  447  git remote add origin git@github.com:AlexBrown200401/localprac.git
+  448  git branch -M main
+  449  git push -u origin main
+  450  echo "Local practice was successfully accomplished > Done
+  451  echo "Local practice was successfully accomplished" > Done
+  452  history
+
